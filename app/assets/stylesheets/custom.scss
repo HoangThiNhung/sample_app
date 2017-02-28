@@ -96,3 +96,10 @@ footer {
     }
   }
 }
+#daohung{
+  text-decoration:none;
+  &:hover{
+    color:red;
+    text-decoration:line-through;
+  }
+}
