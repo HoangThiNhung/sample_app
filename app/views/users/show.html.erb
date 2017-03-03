@@ -1,6 +1,9 @@
-<h1>Time now: <%= Time.now.strftime("%H:%M:%S")%></h1>
-<%= Time.now.strftime("%d/%m/%y")%>
-<%= @user.name %>
-<%= @user.email %>
-<%= @user.created_at.strftime("%d-%m-%Y") %>
-<%= @user.updated_at.strftime("%d-%m-%Y") %>
+<h1>Time now: <%= Time.now.strftime("%H:%M:%S")%>
+<br />
+
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+ <!-- <%= @user.email %>
+  <%= @user.created_at.strftime("%d-%m-%Y") %>
+  <%= @user.updated_at.strftime("%d-%m-%Y") %>-->
+</h1>
