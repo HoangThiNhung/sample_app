@@ -1,9 +1,18 @@
-<h1>Time now: <%= Time.now.strftime("%H:%M:%S")%>
-<br />
+<%= provide(:title, @user.name)%>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for(@user) %>
+        <%= @user.name %>
 
-  <%= gravatar_for @user %>
-  <%= @user.name %>
- <!-- <%= @user.email %>
+ <!--       <%= link_to '/help',helf_path %>
+
+ <%= @user.email %>
   <%= @user.created_at.strftime("%d-%m-%Y") %>
   <%= @user.updated_at.strftime("%d-%m-%Y") %>-->
 </h1>
+</section>
+</aside>
+</div>
+
